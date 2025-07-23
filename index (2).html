@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ánh Dương ズン </title>
+    <meta property="og:image" content="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <audio id="audioPlayer" autoplay>
+      <source src="song1.mp3" type="audio/mpeg">
+      Your browser isn't invited for super fun audio time.
+      <source src="song2.mp3" type="audio/mpeg">
+      Your browser isn't invited for super fun audio time.
+      <source src="song3.mp3"></source>
+      Your browser isn't invited for super fun audio time.
+    </audio>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="flag__birthday">
+        <img src="./images/1.png" alt="" width="350" class="flag__left" />
+        <img src="./images/1.png" alt="" width="350" class="flag__right" />
+      </div>
+      <div class="content">
+        <div class="left">
+          <div class="title">
+            <h1 class="happy">
+              <span style="--t: 4s">H</span>
+              <span style="--t: 4.2s">a</span>
+              <span style="--t: 4.4s">p</span>
+              <span style="--t: 4.6s">p</span>
+              <span style="--t: 4.8s">
+                y
+                <div class="hat">
+                  <img src="./images/hat.png" alt="" width="130" />
+                </div>
+              </span>
+            </h1>
+            <h1 class="birthday">
+              <span style="--t: 5s">B</span>
+              <span style="--t: 5.2s">i</span>
+              <span style="--t: 5.4s">r</span>
+              <span style="--t: 5.6s">t</span>
+              <span style="--t: 5.8s">h</span>
+              <span style="--t: 6s">d</span>
+              <span style="--t: 6.2s">a</span>
+              <span style="--t: 6.4s">y</span>
+            </h1>
+          </div>
+          <div class="date__of__birth">
+            <span></span>
+          </div>
+          <div class="btn">
+            <button id="btn__letter">
+              Món quà bí mật 💕
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>
+          <div class="btn">
+            <button id="btn__gift">
+              Album hồi ức 📷
+              <i class="fas fa-spinner"></i> <!-- Hiệu ứng quay -->
+            </button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="box__account">
+            <div class="image">
+              <img
+                src="./475131584_1702614680674981_3419617629092299760_n.jpg"
+                alt=""
+                style="
+                  border-radius: 200%;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: center;
+                  object-position: 20% 80%;
+                "
+                class="rounded-image"
+              />
+            </div>
+            <div class="name">
+              <i class="fa-solid fa-heart"></i>
+              <span>Nguyễn Hoàng Ánh Dương</span>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="balloon_one">
+              <img width="100px" src="./images/balloon1.png" alt="" />
+            </div>
+            <div class="balloon_two">
+              <img width="100px" src="./images/balloon2.png" alt="" />
+            </div>
+          </div>
+          <div class="cricle">
+            <div class="text__cricle">
+              <span style="--i: 1">h</span>
+              <span style="--i: 2">a</span>
+              <span style="--i: 3">p</span>
+              <span style="--i: 4">p</span>
+              <span style="--i: 5">y</span>
+              <span style="--i: 6">-</span>
+              <span style="--i: 7">b</span>
+              <span style="--i: 8">i</span>
+              <span style="--i: 9">r</span>
+              <span style="--i: 10">t</span>
+              <span style="--i: 11">h</span>
+              <span style="--i: 12">d</span>
+              <span style="--i: 13">a</span>
+              <span style="--i: 14">y</span>
+              <span style="--i: 15">-</span>
+            </div>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <span class="day"></span>
+          <span class="month"></span>
+        </div>
+      </div>
+      <div class="decorate_star star1" style="--t: 15s"></div>
+      <div class="decorate_star star2" style="--t: 15.2s"></div>
+      <div class="decorate_star star3" style="--t: 15.4s"></div>
+      <div class="decorate_star star4" style="--t: 15.6s"></div>
+      <div class="decorate_star star5" style="--t: 15.8s"></div>
+      <div class="decorate_flower--one" style="--t: 15s">
+        <img width="20" src="./images/decorate_flower.png" alt="" />
+      </div>
+      <div class="decorate_flower--two" style="--t: 15.3s">
+        <img width="20" src="./images/decorate_flower.png" alt="" />
+      </div>
+      <div class="decorate_flower--three" style="--t: 15.6s">
+        <img width="20" src="./images/decorate_flower.png" alt="" />
+      </div>
+      <div class="decorate_bottom">
+        <img src="./images/decorate.png" alt="" width="100" />
+      </div>
+      <div class="smiley__icon">
+        <img src="./images/smiley_icon.png" alt="" width="100" />
+      </div>
+
+      <div class="box__letter">
+        <div class="letter__border">
+          <div class="letter">
+            <div class="title__letter"></div>
+            <div class="content__letter">
+              <div class="left">
+                <img
+                  id="heart__letter"
+                  src="./images/heart_letter.png"
+                  alt=""
+                />
+                <img
+                  class="heart heart_1"
+                  style="--t: 0.2s"
+                  width="20"
+                  src="./images/heart.png"
+                  alt=""
+                />
+                <img
+                  class="heart heart_2"
+                  style="--t: 0.4s"
+                  width="20"
+                  src="./images/heart.png"
+                  alt=""
+                />
+                <img
+                  class="heart heart_3"
+                  style="--t: 0.6s"
+                  width="20"
+                  src="./images/heart.png"
+                  alt=""
+                />
+                <img
+                  class="heart heart_4"
+                  style="--t: 0.8s"
+                  width="20"
+                  src="./imagefs/heart.png"
+                  alt=""
+                />
+              </div>
+              <div class="right">
+                <div class="love__img">
+                  <img src="./images/love.png" alt="" width="187" />
+                </div>
+                <div class="text__letter">
+                  <p></p>
+                </div>
+                <img id="mewmew" height="100" width="80" src="./images/mewmew.gif" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let datetxt = "24-07-2005";
+    let datatxtletter =
+      "Chị hai của Đen," +
+      " Lại một mùa sinh nhật nữa trôi qua mà chị vẫn ở bên kia bán cầu, còn em thì lặng lẽ bên này nhớ thương. Ngày hôm nay, với nhiều người chỉ là một ngày bình thường, nhưng với em, đó là ngày thật đặc biệt – vì đó là ngày chị đến với thế giới này, và rồi trở thành ánh sáng không thể thiếu trong tuổi thơ và cả những ngày trưởng thành của em." +
+      " Có những điều, dù đã lớn, em vẫn chưa bao giờ nói hết thành lời – là cảm ơn chị, cảm ơn vì đã luôn kiên nhẫn bên cạnh em, dạy em cách mạnh mẽ mà vẫn dịu dàng, cách bao dung với người khác và cả chính mình. Em biết, hành trình 19 năm của chị không dễ dàng – nơi đất khách chắc chắn có nhiều lần chị chạnh lòng, nhiều lần mệt mỏi tưởng như muốn dừng lại. Nhưng em chưa từng thấy chị bỏ cuộc. Đối với em, chị không chỉ là người thân, mà còn là một tấm gương – để em soi vào mỗi khi cảm thấy lạc lối." +
+      " Có những buổi tối, em ngồi giữa phòng, nhớ lại những lần cả nhà cùng ăn cơm, những lần chị mắng em vì vụng về – và bất giác, chỉ muốn thời gian trôi chậm lại một chút, để em được sống thêm vài ngày của tuổi thơ bên chị." +
+      " Em nhớ cái ôm ngày chị đi – vội vã, nhưng ấm áp nhất thế gian. Em đã nghĩ mình sẽ quen dần với việc chị xa nhà, nhưng thật lòng, chẳng năm nào là dễ dàng cả." +
+      " Chị à, dù có đi đến đâu, làm được gì, thì với em, chị vẫn luôn là nơi để em trở về – là bến cảng yên bình nhất giữa đời. Em chỉ mong, dù ở nơi xa, những ngày đông lạnh nhất hay những đêm dài nhất, chị vẫn luôn cảm nhận được hơi ấm của tình thân, của ký ức, và cả niềm tin mà mọi người dành cho chị." +
+      " Em hy vọng, trong từng lựa chọn, từng giấc mơ chị theo đuổi, luôn có chút gì đó của em, của nhà mình, tiếp thêm động lực cho chị vững bước." +
+      " Chúc chị tuổi mới thêm bình an, thêm sức mạnh và giữ mãi nụ cười trong veo như ngày bé." +
+      " Chúc chị sẽ gặp được những người thật tốt, và mọi dự định lớn nhỏ đều thành hiện thực." +
+      " Em mong những ngày khó khăn sẽ chóng qua, những niềm vui sẽ đến nhiều hơn, và mọi nỗ lực của chị sẽ được đền đáp bằng hạnh phúc xứng đáng nhất." +
+      " Nếu cuộc đời là một chuyến tàu dài, em mong chị luôn ngồi ở khoang có cửa sổ hướng về quê nhà, để mỗi lần mệt mỏi, có thể nhìn về phía ấy và thấy lòng mình nhẹ tênh." +
+      " Cảm ơn chị – vì đã luôn là chị của em. Cảm ơn vì đã cho em một thanh xuân đẹp đến vậy, dù đôi khi chỉ là những lần chị mỉm cười động viên em đứng dậy sau vấp ngã." +
+      "運命はあなたに幸せと素晴らしい未来を運んできますように。" +
+      " Cầu mong số phận sẽ mang đến cho chị mọi điều tốt đẹp và một tương lai thật rực rỡ, thật bình yên." +
+      " Chúc mừng sinh nhật, chị gái yêu dấu của Đen. Ngày chị về, mình sẽ lại cùng nhau kể những câu chuyện dở dang của tuổi trẻ, như chưa từng xa cách.";
+    let titleLetter = "Dear my BEST SISTER";
+    let charArrDate = datetxt.split("");
+    let charArrTitle = titleLetter.split("");
+    let textSegments = datatxtletter.match(/(.{1,230})(?:\s|$)/g);
+
+    let currentIndex = 0;
+    let currentIndexTitle = 0;
+    let currentSegment = 0;
+
+    let date__of__birth = document.querySelector(".date__of__birth span");
+    let text__letter = document.querySelector(".text__letter p");
+
+    setTimeout(function () {
+      let timeDatetxt = setInterval(function () {
+        if (currentIndex < charArrDate.length) {
+          date__of__birth.textContent += charArrDate[currentIndex];
+          currentIndex++;
+        } else {
+          let i = document.createElement("i");
+          i.className = "fa-solid fa-star";
+          document.querySelector(".date__of__birth").prepend(i);
+          document.querySelector(".date__of__birth").appendChild(i.cloneNode(true));
+          clearInterval(timeDatetxt);
+        }
+      }, 100);
+    }, 12000);
+
+    var intervalTitle, intervalContent;
+
+    $("#btn__letter").on("click", function () {
+      $(".box__letter").slideDown();
+      setTimeout(function () {
+        $(".letter__border").slideDown();
+      }, 1000);
+
+      setTimeout(function () {
+        intervalTitle = setInterval(function () {
+          if (currentIndexTitle < charArrTitle.length) {
+            document.querySelector(".title__letter").textContent += charArrTitle[currentIndexTitle];
+            let i = document.createElement("i");
+            i.className = "fa-solid fa-heart";
+            document.querySelector(".title__letter").appendChild(i);
+            currentIndexTitle++;
+          } else {
+            clearInterval(intervalTitle);
+          }
+        }, 100);
+      }, 2000);
+
+      setTimeout(function () {
+        document.querySelector("#heart__letter").classList.add("animationOp");
+        document.querySelector(".love__img").classList.add("animationOp");
+        document.querySelector("#mewmew").classList.add("animationOp");
+      }, 2800);
+
+      setTimeout(function () {
+        document.querySelectorAll(".heart").forEach((item) => {
+          item.classList.add("animation");
+        });
+      }, 3500);
+
+      function displaySegment() {
+        if (currentSegment < textSegments.length) {
+          text__letter.textContent = "";
+          let textArr = textSegments[currentSegment].split("");
+          let currentIndexLetter = 0;
+
+          intervalContent = setInterval(function () {
+            if (currentIndexLetter < textArr.length) {
+              text__letter.textContent += textArr[currentIndexLetter];
+              currentIndexLetter++;
+            } else {
+              clearInterval(intervalContent);
+
+              if (currentSegment < textSegments.length - 1) {
+                        setTimeout(() => {
+                            text__letter.textContent += " →";
+                            setTimeout(() => {
+                                currentSegment++;
+                                displaySegment();
+                            }, 2500); // Thời gian chờ giữa các đoạn (ms)
+                        }, 400); // Thời gian chờ trước khi thêm "→"
+                    }
+                    // Nếu là đoạn cuối thì kết thúc luôn, không lặp lại
+                }
+            }, 60); // Tốc độ gõ từng ký tự (ms)
+        }
+    }
+      setTimeout(displaySegment, 6000);
+    });
+
+    $(".close").on("click", function () {
+      clearInterval(intervalContent);
+      document.querySelector(".title__letter").textContent = "";
+      text__letter.textContent = "";
+      currentIndexTitle = 0;
+      currentSegment = 0;
+      document.querySelector("#heart__letter").classList.remove("animationOp");
+      document.querySelector(".love__img").classList.remove("animationOp");
+      document.querySelector("#mewmew").classList.remove("animationOp");
+      document.querySelectorAll(".heart").forEach((item) => {
+        item.classList.remove("animation");
+      });
+      $(".box__letter").slideUp();
+      $(".letter__border").slideUp();
+    });
+    //mobile
+
+    function mobile() {
+      const app = {
+        timeout: function (txt, dom) {
+          let currentIndex = 0;
+          let charArr = txt.split("");
+          intervalMobile = setInterval(function () {
+            if (currentIndex < charArr.length) {
+              dom.textContent += charArr[currentIndex];
+              currentIndex++;
+            } else {
+              clearInterval(intervalMobile);
+            }
+          }, 200);
+        },
+      };
+      return app;
+    }
+    const fcMobile = mobile();
+    if (window.innerWidth < 768) {
+      setTimeout(() => {
+        fcMobile.timeout("26", document.querySelector(".day"));
+      }, 5000);
+      setTimeout(() => {
+        fcMobile.timeout("10", document.querySelector(".month"));
+      }, 6000);
+    }
+    
+    document.getElementById("btn__gift").addEventListener("click", function() {
+    window.open("https://www.mixbook.com/photo-books/interests/minimal-white-38469906?vk=wupGhGSpHXGFD7ElmlzJ", "_blank");
+    });
+
+    const playlist = [
+    "song1.mp3",
+    "song2.mp3",
+    "song3.mp3"
+  ];
+
+  let currentTrack = 0; // Chỉ số bài hát hiện tại
+  const audioPlayer = document.getElementById("audioPlayer");
+
+  // Khi nhạc kết thúc, chuyển sang bài tiếp theo
+  audioPlayer.addEventListener("ended", function() {
+    currentTrack = (currentTrack + 1) % playlist.length; // Lặp lại playlist
+    audioPlayer.src = playlist[currentTrack]; // Đổi nguồn file nhạc
+    audioPlayer.play(); // Tự động phát bài tiếp theo
+  });
+  </script>
+</html>
